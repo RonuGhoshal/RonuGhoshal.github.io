@@ -1,0 +1,32 @@
+main {
+  display: inline;
+  position: relative;
+  top: 1em;
+  margin-left: 45%;
+  margin-right: 8%;
+  text-align: left;
+  font-family: Rockwell, serif;
+  font-size: 1.25em;
+}
+
+#content {
+  margin-left: 45%;
+}
+
+section h1 {
+  padding-left: 5%;
+}
+
+section span {
+  text-align: center;
+  font-size: 1.5em;
+  display: block;
+  padding-bottom: 3%;
+}
+
+section div {
+padding-left: 3%;
+padding-right: 3%;
+display: block;
+padding-bottom: 1%;
+}
