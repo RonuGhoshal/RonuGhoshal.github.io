@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "../stylesheets/default.css">
+  <link rel= "stylesheet" type= "text/css" href= "../stylesheets/blog.css">
+  <title>My Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<body>
+  <header>
+      <div><span>Ronu Ghoshal</span><span>Developer and Creator</span></div>
+      <nav><a href="../index.html">Home </a><a href="index.html">Blog </a><a href="#">Projects </a><a href="#">About Me </a><a href="#">Contact </a></nav>
+     </header>
+     <div class="horizontal"></div>
+<main>
+
+   <section>
+    <span>Week 3: CSS Margins, Borders, and Padding</span>
+    <span>January 17th, 2016</span>
+    <div>
+    Welcome back! This week we've been learning the language CSS and its many techniques for styling, formatting, and positioning elements of your web page. In this blog entry we'll discuss three CSS properties that can be adjusted to help you arrange your website's content - <strong><em>margin</em></strong>, <strong><em>border</em></strong>, and <strong><em>padding</em></strong>.
+    </div>
+    <div>
+    First let's discuss margins. CSS margins are used to set the amount of space outside an element's border (we'll discuss borders later on in this blog). You can specify <strong><em>margin-left</em></strong> (the amount of space to the left of an element), <strong><em>margin-right</em></strong>, <strong><em>margin-top</em></strong>, or <strong><em>margin-bottom</em></strong>. For example, I have used the code<br><br>
+          <strong><em>{
+          margin-top: 150px;
+          margin-left: 150px;
+          }</em></strong><br><br>
+    to move the Google image 150 pixels downward and 150 pixels to the right from its original position (screenshot below).
+    </div>
+    <div><img src ="../imgs/google_screenshot.png"></div>
+    <div>
+    You can also set all four margins with the <strong><em>margin</em></strong> property, going counterclockwise from the top. Using the Google example we just demonstrated, this would be expressed as<br><br>
+          <strong><em>{
+          margin: 150px 0px 0px 150px;
+          }</em></strong><br><br>
+    You can also use "margin: auto" to center an element horizontally within the element that contains it. Margins can be expressed in pixels (px) or in a percentage of the containing element.
+    </div>
+    <div>
+    Now let's get into CSS borders. The <strong><em>border</em></strong>
+    property can be used to draw a line (solid, dashed, dotted, and many other styles) around any or all sides of an HTML element. For example, the code <br><br>
+          <strong><em>{border: 3px dashed; }</em></strong> <br><br>
+    would result in a dashed border with the width of 3 pixels, surrounding the element that it's applied to - like this example below: <br><br>
+    <img src="../imgs/border_example.png"><br><br>
+    You can also use the properties <strong><em>border-top</em></strong>, <strong><em>border-right</em></strong>, <strong><em>border-bottom</em></strong>, and <strong><em>border-left</em></strong> to specify the settings for an individual border side. In addition, you can use <strong><em>border-color</em></strong> to specify a color - otherwise, the border will default to the current text color.
+    </div>
+    <div>
+    Lastly, let's talk about the use of padding in css. The <strong><em>padding</em></strong> property can be used to set the size of space between an element's content and its border. Take the previous example with the dashed border around it. If I wanted to increase the distance between the text and the border, I could use the following code: <br><br>
+          <strong><em>{padding: 20px }</em></strong><br><br>
+
+    This adds 20 pixels of padding to each side (If I wanted to, I could choose to add padding to the individual sides using <strong><em>padding-left</em></strong>, etc...) See below what 20 pixels of padding looks like: <br><br>
+
+    <img src= "../imgs/padding-example.png"<br><br>
+
+    Of course, this isn't very effective use of padding, as it has now overlapped with other HTML elements! Still, this gives you an idea of how it can be used to adjust the distance between an element's content and its border.
+    </div>
+    <div>
+    For further discussion of these CSS elements, I encourage readers to check out <a href="http://www.w3schools.com/css/css_boxmodel.asp">W3Schools</a>, as they have some great material on the topic. I hope this has been an informative and enlightening read!
+    </div>
+
+  </section>
+</main>
+ <footer>
+        <a href="https://www.linkedin.com/in/ronesh-ghoshal-92a14924"><img src="http://rainbowvillage.org/wp-content/uploads/2011/05/linkedin-icon.jpg" alt= "LinkedIn" ></a>
+        <a href="https://twitter.com/Ronesh2o"><img src="http://www.estateofcalm.com/Site/themed-images/twitter-icon-footer.png" alt= "Twitter"></a>
+        <a href="mailto:RonuGhoshal@gmail.com"><img src="http://caddokiowa.publishpath.com/Websites/caddokiowa/images/Icons/email.png" alt = "Email Me"></a>
+        <p>&copy;2016 Ronu Ghoshal</p>
+    </footer>
+</body>
