@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "../stylesheets/default.css">
+  <link rel= "stylesheet" type= "text/css" href= "../stylesheets/blog.css">
+  <title>My Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<body>
+  <header>
+      <div><span>Ronu Ghoshal</span><span>Developer and Creator</span></div>
+      <nav><a href="../index.html">Home </a><a href="index.html">Blog </a><a href="#">Projects </a><a href="#">About Me </a><a href="#">Contact </a></nav>
+     </header>
+     <div class="horizontal"></div>
+<main>
+
+   <section>
+    <span>Week 4: Arrays and Hashes</span>
+    <span>January 24th, 2016</span>
+
+    <div>
+    Hello! This week we will be discussing arrays and hashes. These are two of the most useful structures in Ruby, and two of my favorite to use. In this entry, we will compare and contrast the two, with some code snippets included for your reference. We'll begin by going over arrays.
+    </div>
+    <div>
+    What is an array, you might ask? Good question. In Ruby, an array refers simply to an ordered collection of objects. This could be a collection of words, sentences, numbers, or even a collection of more arrays!
+    </div>
+    <div>
+      <img src = "../imgs/yodawg.jpg">
+    </div>
+    <div>
+    Let's take a look at some examples here - first, a simple array of numbers:
+    <pre><code>
+    array_of_numbers = [37, 23, 12, 14, 16]
+    </code></pre>
+    Here, an array of cities (each city name is considered a string):
+    <pre><code>
+    cities = ["Chicago", "Oakland", "New York", "Los Angeles", "Baltimore"]
+    </code></pre>
+    And here's the array of arrays that Xzibit heard you liked:
+    <pre><code>
+    yo_dawg = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]
+    </code></pre>
+    Notice the syntax and how each array is bound by the characters " [ ] ". Finally, I'll show you how an array can be a collection of different types of objects:
+    <pre><code>
+    complex_array = [ 7, "this is a sentence", 8.5, [3, 6, 9], "word"]
+    </code></pre>
+    </div>
+    <div>
+    Let's go over an example of how an array might be useful to you. Take our "cities" array - say you wanted to print each listed city to the screen. You could use the ".each" method (which performs an action on each object in the array) to <strong><em>iterate</em></strong> over the array. To iterate simply means to go through each object in the array and carry out some certain task. Check out the example below:
+    <pre><code>
+    cities.each do |city|
+      puts city
+    end
+    </code></pre>
+    The result would be something like this:
+    <pre><code>
+    Chicago
+    Oakland
+    New York
+    Los Angeles
+    Baltimore
+    </code></pre>
+    </div>
+    <div>
+    Some of the code may be confusing to you if you're brand new to Ruby. Have no fear! The <a href = "http://ruby-doc.org">Ruby Docs</a> are a great source of information, and many of your array-related questions can be answered <a href="http://ruby-doc.org/core-2.2.0/Array.html">here</a>.
+    </div>
+    <div>
+    Now let's move on to hashes. When Ruby programmers speak of a hash, we're not referring to a delicous potato-based meal.
+    </div>
+    <div>
+      <img src = "http://www.afarmgirlsdabbles.com/wp-content/uploads/2013/10/Beef-and-Sweet-Potato-Hash_AFarmgirlsDabbles_AFD.jpg">
+    </div>
+    <div>
+    Nor are we referring to a semi-legal medicine made from a popular plant. Rather, a hash is another Ruby structure, similar to an array in many ways.
+    </div>
+    <div>
+    A major difference between an array and a hash, is that a hash refers to a collection of pairs (rather than a collection of objects). These pairs are made up of two parts - a key, and a value. A good way to understand the concept of a hash is to think of it like a dictionary, with the key referring to the word, and the value referring to its definition. In fact, let's create a new hash and call it <strong><em>dictionary</em></strong>.
+    <pre><code>
+    dictionary = {"array" => "An ordered collection of objects", "hash" => "A collection of key-value pairs", "integer" => "A whole number with no decimal point"}
+    </code></pre>
+    See what we did there? (Yo dawg, I heard you liked hashes, so we put the definition of a hash inside a hash...)
+    </div>
+    <div>
+    Say you wanted to make use of your dictionary hash, in order to get the definition of some Ruby terminology. Here's the syntax you could use to print out the definition of an array:
+    <pre></code>
+    puts dictionary["array"]
+    </code></pre>
+    You would get this as your result:
+    <pre><code>
+    An ordered collection of objects
+    </code></pre>
+    Easy, right? You can also iterate over hashes, like we showed you earlier. This code will get slightly more complex, but you can still review it to get an idea of how hash iteration works:
+    <pre><code>
+    dictionary.each do |key, value|
+      puts value
+    end
+    </code></pre>
+    You would then get the result:
+    <pre><code>
+    An ordered collection of objects
+    A collection of key-value pairs
+    A whole number with no decimal point
+    </code></pre>
+    </div>
+    <div>
+    Again, the Ruby-Docs are a great resource for understanding <a href="http://docs.ruby-lang.org/en/2.0.0/Hash.html">hashes</a>. That about wraps things up for now, but I encourage you to continue researching these structures on your own - you'll need them if you want to be a successful Ruby programmer!
+    </div>
+  </section>
+</main>
+ <footer>
+        <a href="https://www.linkedin.com/in/ronesh-ghoshal-92a14924"><img src="http://rainbowvillage.org/wp-content/uploads/2011/05/linkedin-icon.jpg" alt= "LinkedIn" ></a>
+        <a href="https://twitter.com/Ronesh2o"><img src="http://www.estateofcalm.com/Site/themed-images/twitter-icon-footer.png" alt= "Twitter"></a>
+        <a href="mailto:RonuGhoshal@gmail.com"><img src="http://caddokiowa.publishpath.com/Websites/caddokiowa/images/Icons/email.png" alt = "Email Me"></a>
+        <p>&copy;2016 Ronu Ghoshal</p>
+    </footer>
+</body>
