@@ -10,7 +10,15 @@
 <body>
   <header>
       <div><span>Ronu Ghoshal</span><span>Developer and Creator</span></div>
-      <nav><a href="../index.html">Home </a><a href="index.html">Blog </a><a href="#">Projects </a><a href="#">About Me </a><a href="#">Contact </a></nav>
+      <nav>
+        <ul>
+        <li><a href="../index.html">Home </a></li>
+        <li><a href="index.html">Blog </a></li>
+        <li><a href="#">Projects </a></li>
+        <li><a href="#">About Me </a></li>
+        <li><a href="#">Contact </a></li>
+        <ul>
+      </nav>
      </header>
      <div class="horizontal"></div>
 <main>
@@ -21,13 +29,13 @@
 
     <div>
     Hello! This week we will be discussing arrays and hashes. These are two of the most useful structures in Ruby, and two of my favorite to use. In this entry, we will compare and contrast the two, with some code snippets included for your reference. We'll begin by going over arrays.
-    </div>
+    </div><br>
     <div>
     What is an array, you might ask? Good question. In Ruby, an array refers simply to an ordered collection of objects. This could be a collection of words, sentences, numbers, or even a collection of more arrays!
-    </div>
+    </div><br>
     <div>
       <img src = "../imgs/yodawg.jpg">
-    </div>
+    </div><br>
     <div>
     Let's take a look at some examples here - first, a simple array of numbers:
     <pre><code>
@@ -64,16 +72,16 @@
     </div>
     <div>
     Some of the code may be confusing to you if you're brand new to Ruby. Have no fear! The <a href = "http://ruby-doc.org">Ruby Docs</a> are a great source of information, and many of your array-related questions can be answered <a href="http://ruby-doc.org/core-2.2.0/Array.html">here</a>.
-    </div>
+    </div><br>
     <div>
     Now let's move on to hashes. When Ruby programmers speak of a hash, we're not referring to a delicous potato-based meal.
-    </div>
+    </div><br>
     <div>
       <img src = "http://www.afarmgirlsdabbles.com/wp-content/uploads/2013/10/Beef-and-Sweet-Potato-Hash_AFarmgirlsDabbles_AFD.jpg">
-    </div>
+    </div><br>
     <div>
     Nor are we referring to a semi-legal medicine made from a popular plant. Rather, a hash is another Ruby structure, similar to an array in many ways.
-    </div>
+    </div><br>
     <div>
     A major difference between an array and a hash, is that a hash refers to a collection of pairs (rather than a collection of objects). These pairs are made up of two parts - a key, and a value. A good way to understand the concept of a hash is to think of it like a dictionary, with the key referring to the word, and the value referring to its definition. In fact, let's create a new hash and call it <strong><em>dictionary</em></strong>.
     <pre><code>
@@ -84,7 +92,7 @@
                 }
     </code></pre>
     See what we did there? (Yo dawg, I heard you liked hashes, so we put the definition of a hash inside a hash...)
-    </div>
+    </div><br>
     <div>
     Say you wanted to make use of your dictionary hash, in order to get the definition of some Ruby terminology. Here's the syntax you could use to print out the definition of an array:
     <pre></code>

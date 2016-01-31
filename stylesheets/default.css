@@ -22,10 +22,16 @@ nav {
   font-size: 2em;
   margin-left: 37%;
   position: relative;
+  }
+
+nav ul {
+  margin: 0;
+  list-style-type: none;
 }
 
-nav a {
-  margin: 3%
+nav ul li {
+  display: inline;
+  margin: 3%;
 }
 
 a:visited {
@@ -84,6 +90,11 @@ footer a img {
 }
 
 footer p {
-  margin-top: -3%;
-  text-align: left;
+  position: relative;
+  top: 3.5em;
+  margin-left: 40%;
+  margin-right: 8%;
+  text-align: center;
+  font-family: Rockwell, serif;
+  font-size: 1.25em;
 }
