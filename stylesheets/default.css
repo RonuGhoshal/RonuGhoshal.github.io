@@ -75,26 +75,30 @@ p {
   font-size: 1.25em;
 }
 
+
+
+footer div {
+  position: relative;
+  clear: both;
+  padding-top: 10%;
+  margin-left: 40%;
+  margin-right: 8%
+}
+
 footer {
-  clear:both;
-  padding-top: 5em;
-}
-
-footer a {
-  margin-left: 8%;
-  margin-right: 14%;
-}
-
-footer a img {
- height: 3em;
+  padding-left: 10%;
 }
 
 footer p {
-  position: relative;
-  top: 3.5em;
+  text-align: left;
+  top: 0;
   margin-left: 40%;
   margin-right: 8%;
-  text-align: center;
   font-family: Rockwell, serif;
   font-size: 1.25em;
+}
+
+footer img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
