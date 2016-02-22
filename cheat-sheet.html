@@ -41,24 +41,28 @@
   <h1>Accessing Elements in Nested Objects</h1>
   <p>Let's practice iterating over an array of objects:
   <pre></code>
-  var warriors = [{name: "Stephen Curry", position: "point guard"}, {name: "Klay Thompson", position: "shooting guard"}, {name: "Harrison Barnes", position: "small forward"}, {name: "Draymond Green", position: "shooting guard"}, {name: "Andrew Bogut", position: "center"}]
+  var warriors = [{name: "Stephen Curry", position: "point guard"},
+  {name: "Klay Thompson", position: "shooting guard"},
+  {name: "Harrison Barnes", position: "small forward"},
+  {name: "Draymond Green", position: "shooting guard"},
+  {name: "Andrew Bogut", position: "center"}]
   for (var x in warriors){
   console.log(x)
   }
   </code></pre>
-  Based on our experience with Ruby, we might expect this to log information about each player. However, in JavaScript the variable "x" in warriors refers to the INDEX of each element and thus only logs the numbers 0-4. Let's modify this code a bit:
+  <p>Based on our experience with Ruby, we might expect this to log information about each player. However, in JavaScript the variable "x" in warriors refers to the INDEX of each element and thus only logs the numbers 0-4. Let's modify this code a bit:</p>
   <pre><code>
   for (var x in warriors){
   console.log(warriors[x])
   }
   </code></pre>
-  This logs information (name and position) for each player. What if we just wanted to print their names out?
+  <p>This logs information (name and position) for each player. What if we just wanted to print their names out?</p>
   <pre><code>
   for (var x in warriors){
   console.log(warriors[x]["name"])
   }
   </code> </pre>
-  This will print out the name of each player. Note the quotation marks around "name!"
+  <p>This will print out the name of each player. Note the quotation marks around "name!"</p>
   </div>
   </body>
 
