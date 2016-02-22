@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "../stylesheets/default.css">
+  <link rel= "stylesheet" type= "text/css" href= "../stylesheets/blog.css">
+  <title>My Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<body>
+  <header>
+      <div><span>Ronu Ghoshal</span><span>Developer and Creator</span></div>
+      <nav>
+        <ul>
+        <li><a href="../index.html">Home </a></li>
+        <li><a href="index.html">Blog </a></li>
+        <li><a href="../projects/projects_index.html">Projects </a></li>
+        <li><a href="../about.html">About Me </a></li>
+        <li><a href="#">Contact </a></li>
+        </ul>
+      </nav>
+     </header>
+     <div class="horizontal"></div>
+<main>
+
+   <section>
+    <span>Week 8: Recursion</span>
+    <span>February 21st, 2016</span>
+
+    <div>
+    Greetings! This week, as we prepare to head into the last week of Phase 0, we will explore a new and exciting topic - recursion! Recursion is defined as "the repeated application of a recursive procedure or definition." Well, that's helpful, although in order to understand this definition, you'd have to know what a <strong>recursive procedure</strong> is. Looking up the definition for "recursive," we find that it means "characterized by recurrence or repetition, in particular." So, from these definitions we can guess that there's going to be some sort of repeated repetition, or repetitive repeating, going on!
+    </div><br>
+
+    <div>
+    In mathematics and computer science, recursion refers to a method of defining functions where the function being defined is applied during its own definition (thanks Wikipedia!) A great example to illustrate this is the following factorial method:
+    <pre><code>
+      def factorial(n)
+        if n == 0
+          1
+        else
+          n * factorial(n-1)
+        end
+      end
+    </code></pre>
+    Let's walk through each step in this method. In case you're unfamiliar with factorials - know this: the factorial of 0 is 1. The factorial of 1 is 1, factorial of 2 is 2 * 1 = 2, factorial of 3 is 3 * 2 * 1 = 6, and so on and so forth. In our method, we first create an "if" statement to account for the possibility of the method being passed 0 as an argument. For the sake of simplicity, let's say we called this method on 4 by writing factorial(4).</div><br>
+    <div>
+    Since n is not equal to 0, we move in to the else statement: n * factorial(n-1): or in this case, 4 * factorial(3). But wait! How do we multiply 4 * factorial(3) if we haven't yet defined the factorial method? Well, here's where recursion comes in. In this case, we will evaluate factorial(3) based on the current method, meaning that factorial(3) = 3 * factorial(2). So, our result for factorial(4) as it currently stands is 4 * 3 * factorial(2).
+    </div><br>
+    <div>
+    Repeating this process, we then find that factorial(4) = 4 * 3 * 2 * factorial(1) = 4 * 3 * 2 * 1 * factorial(0). At this point, we know that factorial(0) is equal to 1 (remember our if statement) - so we get our result! 4 * 3 * 2 * 1 * 1 = 12. Here's another simple example - a method to countdown to 1 from any given number n:
+    <pre><code>
+      def countdown(n)
+        if n == 0
+          return
+        end
+        puts n
+        countdown(n-1)
+      end
+    </code></pre>
+    See how the function countdown calls itself within its definition? Pretty neat!
+    </div><br>
+    <div>
+    I look forward to learning more about how recursion can simplify various tasks in Ruby and other languages!
+    </div>
+
+   </section>
+</main>
+ <footer>
+        <div>
+        <a href="https://www.linkedin.com/in/ronesh-ghoshal-92a14924"><img src="../imgs/icon-linkedin.png" alt= "LinkedIn" ></a>
+        <a href="https://twitter.com/Ronesh2o"><img src="../imgs/icon-twitter.png" alt= "Twitter"></a>
+        <a href="mailto:RonuGhoshal@gmail.com"><img src="../imgs/icon-gmail.png" alt = "Email Me"></a>
+        <a href="https://www.github.com/RonuGhoshal"><img src="../imgs/icon-github.png" alt = "GitHub"></a>
+      </div>
+        <p>&copy;2016 Ronu Ghoshal</p>
+ </footer>
+</body>
