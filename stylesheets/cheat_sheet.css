@@ -1,0 +1,49 @@
+header {
+  font-size: 3em;
+  font-family: Courier;
+  text-align: center;
+  padding: 13px;
+}
+
+
+body{
+margin:0;
+padding:0;
+color:#000;
+background:#a7a09a;
+}
+
+#wrap {
+
+background: #99c;
+width:100%;
+margin:0 auto;
+clear: both;
+}
+
+#wrap2 {
+
+background: #79c;
+width:100%;
+margin:0 auto;
+clear: both;
+}
+
+body div{
+  display: inline-block;
+}
+
+.leftside {
+  float: left;
+  width: 50%
+}
+
+
+
+.rightside {
+
+   padding-top: 1%;
+   float: right;
+   width: 50%;
+}
+
