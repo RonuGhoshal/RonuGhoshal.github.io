@@ -22,16 +22,20 @@ clear: both;
 }
 
 #wrap2 {
-
-background: #79c;
-width:100%;
-margin:0 auto;
-clear: both;
+  background: #79c;
+  clear: both;
+  float: left;
+  max-width: 100%;
 }
 
-body div{
-  display: inline-block;
+#wrap2 p{
+  margin-left: 2%;
 }
+
+#wrap2 h1{
+  margin-left: 2%;
+}
+
 
 .leftside {
   float: left;
