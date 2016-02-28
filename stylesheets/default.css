@@ -1,7 +1,16 @@
+
+
 body {
-  margin-left: 20px;
-  background-color: black;
   color: white;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+  url("../imgs/bay_background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header div {
@@ -54,9 +63,10 @@ a:hover {
 #profile-pic {
   float: left;
   margin-left: 4%;
-  margin-top: 6%;
-  height: 25%;
-  width: 25%;
+  margin-top: 4%;
+  height: 30%;
+  width: 30%;
+  border-radius: 25px;
 }
 
 p span {
@@ -80,7 +90,7 @@ p {
 footer div {
   position: relative;
   clear: both;
-  padding-top: 10%;
+  padding-top: 30%;
   margin-left: 40%;
   margin-right: 8%
 }
