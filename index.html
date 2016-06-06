@@ -1,37 +1,171 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href= "stylesheets/default.css">
-    <title>Ronu Ghoshal's Website</title>
+<head>
 
-  </head>
+  <title>Ronu Ghoshal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <body>
-      <header>
-      <div><span>Ronu Ghoshal</span><span>Developer and Creator</span></div>
-      <nav>
-        <ul>
-        <li><a href="./index.html">Home </a></li>
-        <li><a href="blog/index.html">Blog </a></li>
-        <li><a href="projects/projects_index.html">Projects </a></li>
-        <li><a href="about.html">About Me </a></li>
-        <li><a href="#">Contact </a></li>
-        <ul>
-      </nav>
-      </header>
-      <div class="horizontal"></div>
-      <main>
-      <img id= "profile-pic" src= "imgs/good-picture.jpg" alt= "Profile pic">
-      <p><span>Hello! </span>Welcome, and thanks for visiting my site! This is a work in progress, so please check back for regular updates. In the meanwhile, please feel free to check out my <a href="blog/index.html">blog</a>, learn a bit more <a href="#">about me</a>, or send me an <a href="mailto:RonuGhoshal@gmail.com">email</a>! You can also find me on <a href="https://www.linkedin.com/in/ronesh-ghoshal-92a14924">LinkedIn</a>, <a href="https://twitter.com/Ronesh2o">Twitter</a>, and <a href="https://www.github.com/RonuGhoshal">GitHub</a>.</p>
-     </main>
-     <footer>
-        <div>
-        <a href="https://www.linkedin.com/in/ronesh-ghoshal-92a14924"><img src="imgs/icon-linkedin.png" alt= "LinkedIn" ></a>
-        <a href="https://twitter.com/Ronesh2o"><img src="imgs/icon-twitter.png" alt= "Twitter"></a>
-        <a href="mailto:RonuGhoshal@gmail.com"><img src="imgs/icon-gmail.png" alt = "Email Me"></a>
-        <a href="https://www.github.com/RonuGhoshal"><img src="imgs/icon-github.png" alt = "GitHub"></a>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <!-- jQuery is required by Materialize to function -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/style.js">
+  </script>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a class='dropdown-button' href="#" data-activates="dropdown2"><img src="images/hamburger-icon.png" id="hamburger"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="about-link" href="#about_me">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a class="portfolio-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="contact-link" href="#contact">Contact</a></li>
+          <li>
+            </li><a class='dropdown-button' href='#' data-activates='dropdown1'>Social</a>
+
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="https://www.linkedin.com/in/ronughoshal">Linkedin</a></li>
+            <li><a href="https://github.com/ronughoshal">Github</a></li>
+            <li><a href="https://www.twitter.com/Ronesh2o">Twitter</a></li>
+          </ul>
+
+          <ul id='dropdown2' class='dropdown-content'>
+          <li><a href="#about_me">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          </ul>
+
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#about_me">About</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </ul>
       </div>
-        <p>&copy;2016 Ronu Ghoshal</p>
-    </footer>
-  </body>
+    </nav>
+  </div>
+
+  <div class="intro light-blue lighten-2 z-depth-1">
+    <h1 class="grey-text text-lighten-5">RONU GHOSHAL</h1>
+    <h5 class="grey lighten-4 grey-text text-darken-1">Web and Software Developer</h5>
+  </div>
+  <div class="container about">
+    <h5><a class="no_link" id="about_me" name="about_me">About Me</a></h5>
+    <hr>
+    <div class="row">
+      <div class="col s12 m4 l4">
+        <h6>Bio</h6>
+        <p>I have always believed that human creativity can solve just about any human problem. For many years, I satisfied creative impulses as a musician while developing problem-solving abilities in a variety of customer-facing roles.</p><p>Now empowered with strong software and web development skills and the confidence to learn new technologies independently, I look forward to using these skills to make a positive impact on the world.</p>
+      </div>
+      <div class="col s12 m4 l4">
+        <h6>Skills</h6>
+        <ul class="skill_set">
+          <li>Ruby on Rails</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
+          <li>Git/GitHub</li>
+          <li>Sinatra</li>
+          <li>Many more! (Just Ask)</li>
+        </ul>
+      </div>
+      <div class="col s12 m4 l4">
+        <h6>Recent Work History</h6>
+        <ul class="collapsible">
+          <li class="active">
+            <div class="collapsible-header"><i class="mdi-av-web"></i>Software Developer Apprentice</div>
+            <div class="collapsible-body"><a href="http://www.devbootcamp.com">Dev Bootcamp, SF, CA</a><br><br>Over 19 weeks, I completed an intensive program in full-stack web development. During this time I completed over 1000 hours of coding and gained expertise in areas including Ruby on Rails, JavaScript, relational and non-relational databases, and test-driven development.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="mdi-av-web"></i>Engagement Specialist</div>
+            <div class="collapsible-body"><a href="http://www.pacificcommunityventures.com">Pacific Community Ventures, SF, CA</a><br><br>As the Engagement Specialist for the BusinessAdvising.org program, I managed over 50 partnerships between entrepreneurs and volunteer business advisors, conducted initial interviews with potential clients as part of the BusinessAdvising.org program, scheduled meetings between entrepreneurs and their advisors, and reviewed client profiles thoroughly in order to effectively match entrepreneurs with advisors.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="mdi-av-web"></i>Financial Aid Representative</div>
+            <div class="collapsible-body"><a href="http://www.academyart.edu">Academy of Art University, SF, CA</a><br><br>During my tenure at AAU, I assisted several thousand students and processed over $10 million in federal grant and loan funding. I was responsible for walking current and prospective students through the financial aid process, including applying for federal grants, loans, and work-study programs, as well as helping with financial planning, budgeting, and loan repayment. In addition, I collected documentation for financial aid verification, including federal tax returns, income statements, and W-2 forms. This job involved communicating regularly with students via inbound and outbound calls, e-mails, and in-person visits in order to ensure timely disbursement of federal funds. </p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container portfolio" id="portfolio">
+    <h5>portfolio</h5>
+    <h6>MY LATEST PROJECTS</h6>
+    <hr>
+    <div class="row">
+      <div class="col s12 m12 l12 portfolio-holder">
+        <img class="materialboxed" src="images/last-stop.png">
+        <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
+        <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
+        <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
+        <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
+        <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
+      </div>
+    </div>
+  </div>
+
+  <div id="form-messages"></div>
+
+  <div class="container contact" id="contact">
+    <h5>contact</h5>
+    <h6>need a developer? let's talk!</h6>
+    <hr>
+    <div class="row">
+      <div class="col s12 m6 l6">
+        <div class="row">
+          <form id="ajax-contact" action="mailer.php" method="post" enctype="text/plain" class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" name="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" name="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" name="email" type="email" class="validate">
+                <label for="email">E-Mail</label>
+              </div>
+            </div>
+            <textarea name="message" class="materialize-textarea" placeholder="Your Message" required></textarea>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="mdi-content-send right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col s12 m6 l6 contact-holder">
+        <h6 class="mdi-action-home">Email</h6>
+        <p><a href="RonuGhoshal@gmail.com">RonuGhoshal@gmail.com</a></p>
+        <h6 class="mdi-hardware-phone-android">GitHub</h6>
+        <p><a href="http://github.com/RonuGhoshal">RonuGhoshal</a></p>
+        <h6 class="mdi-action-open-in-browser">Twitter</h6>
+        <p><a href="http://twitter.com/Ronesh2o">Ronesh2o</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-copyright">
+      <div class="container">
+      Copyright 2016 Ronu Ghoshal
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
