@@ -34,12 +34,14 @@ $(document).ready(function() {
 
     $.ajax({
     type: 'POST',
-    url: $(form).attr('action'),
-    data: formData
+    url: "//formspree.io/RonuGhoshal@gmail.com",
+    data: formData,
+    dataType: "json"
     }).done(function(resp){
         $(formMessages).removeClass('error');
         $(formMessages).addClass('success');
-        $(formMessages).text(response);
+        console.log(resp);
+        $(formMessages).text("Email Sent!");
         $('#name').val('');
         $('#email').val('');
         $('#message').val('');
