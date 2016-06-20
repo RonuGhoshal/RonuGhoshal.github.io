@@ -36,7 +36,7 @@
           <ul id='dropdown2' class='dropdown-content'>
           <li><a href="#about_me">About</a></li>
           <li><a href="#blog">Blog</a></li>
-          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
           </ul>
 
@@ -44,7 +44,7 @@
           <li><a href="#about_me">About</a></li>
           <li><a href="#stack">Stack</a></li>
           <li><a href="#blog">Blog</a></li>
-          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         </ul>
@@ -115,8 +115,6 @@
     </div>
   </div>
 
-  <div id="form-messages"></div>
-
   <div class="container contact" id="contact">
     <h5>contact</h5>
     <h6>need a developer? let's talk!</h6>
@@ -124,7 +122,7 @@
     <div class="row">
       <div class="col s12 m6 l6">
         <div class="row">
-          <form id="ajax-contact" action="mailer.php" method="post" enctype="text/plain" class="col s12">
+          <form id="ajax-contact" action="https://formspree.io/RonuGhoshal@gmail.com" method="POST">
             <div class="row">
               <div class="input-field col s6">
                 <input id="first_name" name="first_name" type="text" class="validate">
@@ -147,7 +145,11 @@
             </button>
           </form>
         </div>
+        <div id="form-messages"></div>
+
       </div>
+
+
       <div class="col s12 m6 l6 contact-holder">
         <h6 class="mdi-action-home">Email</h6>
         <p><a href="RonuGhoshal@gmail.com">RonuGhoshal@gmail.com</a></p>
